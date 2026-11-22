@@ -1,0 +1,17 @@
+{
+  "name": "interview-training-room-28fall-pm",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:official": "node src/import-official.mjs",
+    "import:resume": "node src/import-resume.mjs",
+    "query": "node src/query.mjs",
+    "serve": "node src/server.mjs",
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:http": "node test/http-smoke.mjs",
+    "verify": "node --test test/*.test.mjs && node test/http-smoke.mjs"
+  },
+  "engines": {"node": ">=24"},
+  "description": "A local-first interview training room for 2028 PM recruiting, focused on advertising strategy and AI products."
+}

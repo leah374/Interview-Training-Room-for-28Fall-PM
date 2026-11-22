@@ -1,0 +1,23 @@
+.tools/
+data/*.sqlite*
+data/raw/
+data/private/
+data/kaka-*.json
+*.log
+.env*
+!.env.example
+.runtime/
+node_modules/
+.DS_Store
+
+# Local/private screenshots and working artifacts. Only the two README images are public.
+artifacts/*
+!artifacts/home-dice-2028.jpg
+!artifacts/voice-answer.jpg
+
+# Account-specific Feishu import helpers are intentionally kept out of the public repo.
+src/discover-kaka.mjs
+src/import-kaka.mjs
+src/select-kaka.mjs
+src/import-feishu.mjs
+

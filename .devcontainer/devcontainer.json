@@ -1,0 +1,15 @@
+{
+  "name": "Interview Training Room",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
+  "forwardPorts": [8765],
+  "portsAttributes": {
+    "8765": {
+      "label": "Interview Training Room",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "containerEnv": {
+    "COACH_DEMO_DATA": "1"
+  },
+  "postCreateCommand": "npm test"
+}

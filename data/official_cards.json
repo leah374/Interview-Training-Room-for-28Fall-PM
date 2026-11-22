@@ -1,0 +1,57 @@
+[
+  {
+    "id":"oceanengine-auction", "title":"巨量引擎：竞价、排序与计费", "publisher":"巨量引擎帮助中心", "platform":"巨量引擎", "topics":["广告竞价","oCPM","oCPC","CPM","CPC"],
+    "url":"https://support.oceanengine.com/support/content/130526?spaceId=187",
+    "content":"巨量引擎帮助中心将 oCPM 定义为以转化为优化目标、按转化目标出价、按展示计费；oCPC 也是以转化为优化目标，但按点击计费。CPM 按展示出价与计费，CPC 按点击出价与计费。该平台说明竞价胜出会考虑广告主出价、预估曝光转化率与广告质量。面试时应区分优化目标、广告主表达的出价单位、实际计费事件和排序依据；不要把某个平台的公式当作所有广告系统的统一实现。"
+  },
+  {
+    "id":"google-ad-rank", "title":"Google Ads：Ad Rank 与广告质量", "publisher":"Google Ads Help", "platform":"Google Ads", "topics":["广告排序","质量","用户体验"],
+    "url":"https://support.google.com/google-ads/answer/1722122?hl=en_us_us",
+    "content":"Google Ads 的 Ad Rank 用于判断广告是否有资格展示以及相对展示位置。官方列出的影响因素包括出价、广告和落地页质量、Ad Rank 门槛、拍卖竞争程度、搜索上下文，以及广告素材或扩展格式的预期影响。它在拍卖时计算。面试中可据此讨论收益、相关性与用户体验的平衡，但不要把其细节直接外推到其他平台。"
+  },
+  {
+    "id":"google-quality-score", "title":"Google Ads：Quality Score 是诊断指标", "publisher":"Google Ads Help", "platform":"Google Ads", "topics":["质量分","诊断","排序"],
+    "url":"https://support.google.com/google-ads/answer/156066?hl=en-419",
+    "content":"Google Ads 明确说明 1–10 的 Quality Score 是诊断工具，不是拍卖中的直接输入。它帮助定位预期点击率、广告相关性和落地页体验问题。回答质量分与排序的关系时，应区分可见诊断分数与拍卖时的质量评估。"
+  },
+  {
+    "id":"google-smart-bidding", "title":"Google Ads：智能出价目标与拍卖时决策", "publisher":"Google Ads Help", "platform":"Google Ads", "topics":["智能出价","tCPA","tROAS","转化率"],
+    "url":"https://support.google.com/google-ads/answer/10966879?hl=en",
+    "content":"Google Ads 的 Smart Bidding 在每次拍卖中根据上下文信号预测转化概率或价值，并围绕最大化转化、目标 CPA、最大化转化价值或目标 ROAS 等目标设置出价。产品分析应先确认优化目标、预算约束、转化回传质量与延迟，再讨论模型或策略是否有效。"
+  },
+  {
+    "id":"google-conversions", "title":"Google Ads：转化追踪与反馈闭环", "publisher":"Google Ads API 文档", "platform":"Google Ads", "topics":["转化","归因","回传","智能出价"],
+    "url":"https://developers.google.com/google-ads/api/docs/conversions/overview",
+    "content":"Google Ads 将购买、注册等有价值的行为定义为转化，并通过转化追踪衡量广告互动后的行动。其 API 涵盖转化动作配置、线上与线下事件导入、修正、目标管理和诊断。面试排查投放效果时应检查事件定义、埋点与回传成功率、去重、延迟、归因口径，以及优化目标与报表口径是否一致。"
+  },
+  {
+    "id":"google-bidding-management", "title":"Google Ads：出价策略与异常数据处理", "publisher":"Google Ads API 文档", "platform":"Google Ads", "topics":["出价策略","预算","数据异常"],
+    "url":"https://developers.google.com/google-ads/api/docs/campaigns/bidding/overview?hl=en",
+    "content":"Google Ads 按业务目标提供手动和自动出价策略，也支持共享预算、出价调整及出价策略状态排查。官方文档包含在跟踪故障时排除异常转化数据、以及对预期季节性变化作调整的能力。面试中讨论 CPA 波动时，应先排除转化追踪故障与活动季节性，再评估策略调整。"
+  },
+  {
+    "id":"openrtb-26", "title":"IAB Tech Lab：OpenRTB 2.6 竞价链路", "publisher":"IAB Tech Lab", "platform":"开放 RTB 标准", "topics":["RTB","DSP","SSP","竞价协议"],
+    "url":"https://github.com/InteractiveAdvertisingBureau/openrtb2.x/blob/main/2.6.md",
+    "content":"OpenRTB 是开放的实时竞价协议规范，描述买卖双方交换竞价请求和响应的数据对象。学习时可从媒体广告机会、交易平台或 SSP、DSP 的出价响应、赢标和结算通知来理解链路。它是协议规范，不代表某一平台内部排序模型、计费规则或流量分配策略。"
+  },
+  {
+    "id":"google-campaign-structure", "title":"Google Ads：广告活动的目标、预算和定向", "publisher":"Google Ads API 文档", "platform":"Google Ads", "topics":["投放平台","广告活动","预算","定向"],
+    "url":"https://developers.google.com/google-ads/api/docs/campaigns/overview",
+    "content":"Google Ads 官方文档将管理广告活动的关键配置概括为预算、服务于业务目标的出价策略和触达目标受众的定向条件。设计投放产品时，可把目标设定、预算与出价、受众、创意、转化追踪和报表诊断作为工作流检查项；实际层级和可用能力取决于平台。"
+  },
+  {
+    "id":"google-ai-creative", "title":"Google Ads：生成式 AI 广告素材产品", "publisher":"Google Ads Help", "platform":"Google Ads", "topics":["广告AI产品","素材生成","人机协作","合规"],
+    "url":"https://support.google.com/google-ads/answer/14150602?hl=en",
+    "content":"Google Ads 的 Performance Max 可依据广告主网站和产品摘要建议或生成文字、图片等素材；广告主可审核、选择或放弃生成结果。官方提醒生成内容可能不准确，且不保证通过广告政策审核。设计广告素材 AI 产品时，应明确输入来源、可编辑和审核环节、品牌一致性、政策校验，以及生成素材的线上效果评估；功能可用范围随地区和账户条件变化。"
+  },
+  {
+    "id":"google-incrementality", "title":"Google Ads：增量转化实验", "publisher":"Google Ads Help", "platform":"Google Ads", "topics":["增量效果","实验","归因","因果"],
+    "url":"https://support.google.com/google-ads/answer/12003020?hl=en-en-1",
+    "content":"Google Ads 的 Conversion Lift 使用增量实验衡量广告对目标行为产生的额外影响，区别于仅统计归因转化。面试分析 AI 投放工具的价值时，应区分模型预测指标、广告平台归因指标与真正的增量业务结果，并关注对照组、样本量、干扰和实验周期。"
+  },
+  {
+    "id":"iab-agentic-ads", "title":"IAB Tech Lab：Agentic Advertising 倡议", "publisher":"IAB Tech Lab", "platform":"行业倡议", "topics":["广告AI产品","Agent","媒体购买","开放标准"],
+    "url":"https://iabtechlab.com/wp-content/uploads/2026/02/Agentic-Advertising-Initiative-Info-Sheet-v2.pdf",
+    "content":"IAB Tech Lab 将自主或半自主代理用于媒体发现、规划和购买视为正在发展的广告技术方向，并提出尽量沿用 OpenRTB 等现有对象模型与术语。面试设计广告代理时，可围绕目标表达、数据访问、预算与权限边界、动作确认、审计和效果反馈讨论。该材料属于行业倡议，不应表述为所有平台已普遍实现的标准功能。"
+  }
+]
