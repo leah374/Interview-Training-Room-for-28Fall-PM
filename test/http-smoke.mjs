@@ -6,7 +6,7 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const base=`http://127.0.0.1:${server.address().port}`;
 const call=async(path,data)=>{const r=await fetch(base+path,{method:data?'POST':'GET',headers:data?{'content-type':'application/json'}:{},body:data?JSON.stringify(data):undefined});assert(r.ok,await r.clone().text());return r.json();};
 try{
-  const html=await fetch(base);assert.equal(html.status,200);assert((await html.text()).includes('起势'));
+  const html=await fetch(base);assert.equal(html.status,200);assert((await html.text()).includes('候场'));
   assert.equal((await call('/api/dashboard')).metrics.attempts,0);
   const a=await call('/api/attempts',{questionId:'q-cpa'});
   assert.equal((await call(`/api/attempts/${a.id}/answer`,{answer:'首先检查回传口径和延迟，再看CTR和CVR以及流量人群变化，最后通过对照实验验证。'})).status,'followup');
